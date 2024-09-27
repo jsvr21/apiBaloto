@@ -21,7 +21,7 @@ if (curl_errno($ch)) {
     echo 'HTTP Code: ' . $httpCode . "\n";  // Muestra el código de respuesta
     // Procesar la respuesta
     echo "Response: \n";
-    echo json_encode($response, JSON_PRETTY_PRINT);;  // Muestra la respuesta
+    echo $response;;  // Muestra la respuesta
 }
 
 curl_close($ch);
