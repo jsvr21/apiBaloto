@@ -18,9 +18,6 @@ if (curl_errno($ch)) {
     // Manejar errores de curl
     echo 'Error:' . curl_error($ch);
 } else {
-    echo 'HTTP Code: ' . $httpCode . "\n";  // Muestra el código de respuesta
-    // Procesar la respuesta
-    echo "Response: \n";
     echo json_encode($response, JSON_PRETTY_PRINT);  // Muestra la respuesta
 }
 
